@@ -1,0 +1,37 @@
+[
+  {
+    "npm": 714250032,
+    "nama": "Andi",
+    "umur": 25,
+    "status_mahasiswa": true,
+    "hobi": ["membaca", "berenang", "coding"]
+  },
+  {
+    "npm": 714250033,
+    "nama": "Budi",
+    "umur": 30,
+    "status_mahasiswa": false,
+    "hobi": ["bersepeda", "memasak"]
+  },
+  {
+    "npm": 714250034,
+    "nama": "Citra",
+    "umur": 22,
+    "status_mahasiswa": true,
+    "hobi": ["menulis", "melukis", "traveling"]
+  },
+  {
+    "npm": 714250035,
+    "nama": "Dewi",
+    "umur": 28,
+    "status_mahasiswa": true,
+    "hobi": ["yoga", "menonton film"]
+  },
+  {
+    "npm": 714250036,
+    "nama": "Eko",
+    "umur": 35,
+    "status_mahasiswa": false,
+    "hobi": ["memancing", "berkebun"]
+  }
+]
