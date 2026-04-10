@@ -8,6 +8,7 @@ type Mahasiswa struct {
 	Prodi  string         `json:"prodi"  gorm:"column:prodi;type:varchar(100);not null"`
 	Alamat string         `json:"alamat" gorm:"column:alamat;type:varchar(200)"`
 	Email  string         `json:"email"  gorm:"column:email;type:varchar(100)"`
+	NoHP string `json:"nohp" gorm:"column:nohp;type:varchar(13)"`
 	Hobi   pq.StringArray `json:"hobi"   gorm:"column:hobi;type:text[]"`
 }
 
