@@ -5,6 +5,7 @@ export default function Mahasiswa() {
   const [mahasiswa, setMahasiswa] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [keyword, setKeyword] = useState("");
 
   const fetchData = () => {
     setLoading(true);
@@ -18,6 +19,17 @@ export default function Mahasiswa() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  const filteredMahasiswa = mahasiswa.filter((mhs) => {
+    const kw = keyword.toLowerCase();
+    return (
+      mhs.nama?.toLowerCase().includes(kw) ||
+      mhs.prodi?.toLowerCase().includes(kw) ||
+      mhs.email?.toLowerCase().includes(kw) ||
+      mhs.alamat?.toLowerCase().includes(kw) ||
+      String(mhs.npm || "").toLowerCase().includes(kw)
+    );
+  });
   
 
   if (loading) return <p className="text-center">Loading...</p>;
@@ -29,7 +41,7 @@ export default function Mahasiswa() {
       <h2 className="text-xl font-bold mb-4">Daftar Mahasiswa</h2>
         <h5 className="text-lg font-semibold mb-4 text-gray-600">Total Mahasiswa: {" "}
             <span className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-blue-500 rounded-3xl">
-              {mahasiswa.length}
+              {filteredMahasiswa.length}
             </span>
         </h5>
     <div className="relative w-full md:w-80 mb-4">
@@ -54,7 +66,7 @@ export default function Mahasiswa() {
             </tr>
           </thead>
           <tbody className="divide-y">
-            {mahasiswa.map((mhs, index) => (
+            {filteredMahasiswa.map((mhs, index) => (
               <tr key={mhs.npm} className="hover:bg-blue-50">
                 <td className="px-4 py-3 border">{index + 1}</td>
                 <td className="px-4 py-3 text-gray-500 border">{mhs.npm}</td>
