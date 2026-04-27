@@ -44,7 +44,8 @@ export default function Mahasiswa() {
               {filteredMahasiswa.length}
             </span>
         </h5>
-    <div className="relative w-full md:w-80 mb-4">
+    <div className="flex items-center gap-3 mb-4">
+            <div className="relative w-full md:w-80">
                 <input
                 type="text"
                 placeholder="Cari Mahasiswa.."
@@ -53,6 +54,14 @@ export default function Mahasiswa() {
                 className="w-full pl-10 pr-4 py-2 border rounded-lg"/>
                 <span className="absolute left-3 top-2.5 text-gray-400">🔍</span>
             </div>
+            <button
+              onClick={fetchData}
+              className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-2"
+              title="Refresh data"
+            >
+              🔄 Refresh
+            </button>
+      </div>
 
       <div className="overflow-hidden border rounded-lg">
         <table className="w-full text-sm text-left">
