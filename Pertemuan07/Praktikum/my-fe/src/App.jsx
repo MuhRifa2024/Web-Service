@@ -4,12 +4,13 @@ import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
 import MahasiswaPage from "./pages/MahasiswaPages";
 import DashboardPage from "./pages/DashboardPages";
+import DatadiriPage from "./pages/DataDiriPages";
 
 export default function App() {
   const [activePage, setActivePage] = useState("dashboard");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const pageTitle = activePage === "dashboard" ? "Dashboard" : "Data Mahasiswa";
+  const pageTitle = activePage === "dashboard" ? "Dashboard" : activePage === "mahasiswa" ? "Data Mahasiswa" : "Data Diri";
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
@@ -31,7 +32,9 @@ export default function App() {
 
         <main className="flex-1 p-3 sm:p-4 md:p-6">
           <div className="w-full rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
-            {activePage === "dashboard" ? <DashboardPage /> : <MahasiswaPage />}
+            {activePage === "dashboard" && <DashboardPage />}
+            {activePage === "mahasiswa" && <MahasiswaPage />}
+            {activePage === "dataDiri" && <DatadiriPage />}
           </div>
         </main>
 
