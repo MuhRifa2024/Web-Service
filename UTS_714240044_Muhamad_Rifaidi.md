@@ -38,7 +38,7 @@ Sistem ini menggunakan arsitektur *Client-Server* terpisah antara Frontend (Reac
 
 ## 3. URL Repository GitHub
 Berikut adalah tautan repositori *source code* untuk proyek ini:
-- **Repository Backend dan Frontend:** [MASUKKAN URL GITHUB BACKEND ANDA DI SINI]
+- **Repository Backend dan Frontend:** (https://github.com/MuhRifa2024/PemrogramanIII_714240044.git)
 
 
 ---
@@ -46,39 +46,44 @@ Berikut adalah tautan repositori *source code* untuk proyek ini:
 ## 4. Screenshot Database PostgreSQL Supabase
 *(Berikut adalah bukti pembuatan tabel dan isi data di Supabase).*
 
-**[SPACE SCREENSHOT: TABEL BARANG]**
-> *Silakan ganti teks ini dengan screenshot tabel `barang` di Supabase Dashboard Anda. Pastikan terlihat minimal 10 baris data.*
+**SCREENSHOT: TABEL BARANG:**
+> ![alt text](gambar/image.png)
 
-**[SPACE SCREENSHOT: TABEL PEMINJAMAN]**
-> *Silakan ganti teks ini dengan screenshot tabel `peminjaman` di Supabase Dashboard Anda. Pastikan terlihat minimal 10 baris data.*
+**SCREENSHOT: TABEL PEMINJAMAN:**
+> ![alt text](gambar/image2.png)
 
 ---
 
 ## 5. Screenshot Pengujian API Menggunakan Postman
-*(Pengujian beberapa endpoint REST API yang telah dibangun).*
 
-**[SPACE SCREENSHOT: POSTMAN - GET ALL BARANG]**
-> *Silakan ganti teks ini dengan screenshot pengujian endpoint GET `/api/barang`.*
+**SCREENSHOT: POSTMAN - EDIT BARANG:**
+>![alt text](gambar/image5.png)
 
-**[SPACE SCREENSHOT: POSTMAN - GET BARANG BY ID]**
-> *Silakan ganti teks ini dengan screenshot pengujian endpoint GET `/api/barang/:kode`.*
+**SCREENSHOT: POSTMAN - DELETE BARANG:**
+>![alt text](gambar/image6.png)
 
-**[SPACE SCREENSHOT: POSTMAN - POST TAMBAH BARANG]**
-> *Silakan ganti teks ini dengan screenshot pengujian POST `/api/barang` yang menunjukkan validasi / keberhasilan insert data.*
+**SCREENSHOT: POSTMAN - GET ALL BARANG:**
+> ![alt text](gambar/image3.png)
+
+**SCREENSHOT: POSTMAN - GET BARANG BY ID:**
+> ![alt text](gambar/image7.png)
+
+**SCREENSHOT: POSTMAN - POST TAMBAH BARANG:**
+> ![alt text](gambar/image4.png)
 
 ---
 
 ## 6. Screenshot Tampilan Frontend
-*(Antarmuka sistem manajemen inventaris yang dibangun menggunakan React).*
+[*(Antarmuka sistem manajemen inventaris yang dibangun menggunakan React).*]
 
-**[SPACE SCREENSHOT: HALAMAN DATA BARANG (GET ALL)]**
-> *Silakan ganti teks ini dengan screenshot halaman Data Barang yang menampilkan tabel.*
+**SCREENSHOT: HALAMAN DATA BARANG (GET ALL):**
+> ![alt text](gambar/front2.png)
 
-**[SPACE SCREENSHOT: HALAMAN DETAIL BARANG (GET BY ID)]**
-> *Silakan ganti teks ini dengan screenshot halaman Detail Barang saat tombol "Detail" di tabel ditekan.*
+**SCREENSHOT: HALAMAN DETAIL BARANG (GET BY ID):**
+> ![alt text](gambar/front3.png)
 
-**[SPACE SCREENSHOT: MODAL FORM TAMBAH/EDIT DATA]**
-> *Silakan ganti teks ini dengan screenshot modal form saat menambah atau mengedit data (Bonus CRUD).*
+**SCREENSHOT: MODAL FORM TAMBAH/EDIT DATA:**
+> ![alt text](gambar/front4.png)
 
-**[SPACE SCREENSHOT: HALAMAN PEMINJAMAN]**
-> *Silakan ganti teks ini dengan screenshot halaman Data Peminjaman.*
+**SPACE SCREENSHOT: HALAMAN PEMINJAMAN:**
+> ![alt text](gambar/front5.png)
