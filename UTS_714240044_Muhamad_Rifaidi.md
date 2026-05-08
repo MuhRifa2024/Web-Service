@@ -38,8 +38,8 @@ Sistem ini menggunakan arsitektur *Client-Server* terpisah antara Frontend (Reac
 
 ## 3. URL Repository GitHub
 Berikut adalah tautan repositori *source code* untuk proyek ini:
-- **Repository Backend:** [MASUKKAN URL GITHUB BACKEND ANDA DI SINI]
-- **Repository Frontend:** [MASUKKAN URL GITHUB FRONTEND ANDA DI SINI]
+- **Repository Backend dan Frontend:** [MASUKKAN URL GITHUB BACKEND ANDA DI SINI]
+
 
 ---
 
